@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <input type="text" n-modal="count" />
+    <button type="button" n-click="increment">increment</button>
+    <p n-bind="count"></p>
+    <p n-bind="data.count1"></p>
+    <button type="button" n-click="decrement">increment{data.count1}</button>
+</div>
+
+<script src="../dist/Nue.js"></script>
+<script>
+    var app = new Nue({
+        el: '#app',
+        data: {
+            count: 0,
+            data: {
+                count1: 0
+            }
+        },
+        methods: {
+            increment: function () {
+                this.count += 1;
+            },
+            decrement: function () {
+                this.data.count1 += 1;
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "nue",
+  "version": "1.0.0",
+  "description": "design jest for mvvm ",
+  "main": "./dist/Nue.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "clear": "rimraf dist",
+    "start": "npm run clear && babel --watch src -d dist"
+  },
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "rimraf": "^2.6.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
